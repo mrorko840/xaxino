@@ -25,7 +25,8 @@
                                                     <div class="image-upload">
                                                         <div class="thumb">
                                                             <div class="avatar-preview">
-                                                                <div class="profilePicPreview" style="background-image: url({{ getImage('assets/images/frontend/' . $key . '/' . @$content->data_values->$imgKey, @$section->content->images->$imgKey->size) }})">
+                                                                {{-- <div class="profilePicPreview" style="background-image: url({{ getImage('assets/images/frontend/' . $key . '/' . @$content->data_values->$imgKey, @$section->content->images->$imgKey->size) }})"> --}}
+                                                                <div class="profilePicPreview" style="background-image: url({{ 'assets/images/frontend/' . $key . '/' . @$content->data_values->$imgKey, @$section->content->images->$imgKey->size }})">
                                                                     <button class="remove-image" type="button"><i class="fa fa-times"></i></button>
                                                                 </div>
                                                             </div>
