@@ -14,10 +14,17 @@
                     </a>
                 </li>
 
-                <li class="sidebar-menu-item {{ menuActive('admin.frontend.sections') }}">
+                <li class="sidebar-menu-item @if(URL::current() == route('admin.frontend.sections', 'notice') ) active @endif">
                     <a class="nav-link" href="{{ route('admin.frontend.sections', 'notice') }}">
-                        <i class="menu-icon la la-link"></i>
+                        <i class="menu-icon la la-bell"></i>
                         <span class="menu-title">@lang('Notice') </span>
+                    </a>
+                </li>
+                
+                <li class="sidebar-menu-item @if(URL::current() == route('admin.frontend.sections', 'fake_review') ) active @endif">
+                    <a class="nav-link" href="{{ route('admin.frontend.sections', 'fake_review') }}">
+                        <i class="menu-icon las la-skull-crossbones"></i>
+                        <span class="menu-title">@lang('Fake Reviews') </span>
                     </a>
                 </li>
 
