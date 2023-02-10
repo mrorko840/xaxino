@@ -223,7 +223,8 @@
 
                         <h5 class="text-dark">Add to <span class="font-weight-bold">Home screen</span></h5>
                         <p class="text-secondary">See  as in fullscreen on your device.</p>
-                        <button class="btn btn-sm btn-default px-4 rounded" id="addtohome">Install</button>
+                        <a href="{{ $noticeCaption->data_values->appLink }}" class="btn btn-sm btn-default px-4 rounded" id="addtohome">Install</a>
+                        {{-- <button class="btn btn-sm btn-default px-4 rounded" id="addtohome">Install</button> --}}
                     </div>
                 </div>
             </div>
