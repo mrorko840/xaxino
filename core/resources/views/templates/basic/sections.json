@@ -50,6 +50,7 @@
         "no_selection":true,
         "name":"Notice Board",
         "content":{
+            "appLink":"text",
            "headline":"text",
            "scrolingNotice":"text",
            "YourNotice":"textarea-nic"

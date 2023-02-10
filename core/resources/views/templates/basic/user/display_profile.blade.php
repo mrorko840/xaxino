@@ -1,5 +1,8 @@
 @extends($activeTemplate.'layouts.master')
 @section('content')
+@php
+        $noticeCaption = getContent('notice.content',true);
+@endphp
     
 <body class="body-scroll d-flex flex-column h-100 menu-overlay" data-page="addmoney">
 
@@ -216,6 +219,21 @@
                                         </div>
                                     </div>
                                 </a>
+                                
+                                <a href="{{ $noticeCaption->data_values->appLink }}" class="list-group-item list-group-item-action border-color">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div class="avatar avatar-50 bg-success-light text-success rounded">
+                                                <span class="material-icons">android</span>
+                                            </div>
+                                        </div>
+                                        <div class="col align-self-center pl-0">
+                                            <h6 class="mb-1">App Download</h6>
+                                            <p class="text-secondary">Our Official App Download</p>
+                                        </div>
+                                    </div>
+                                </a>
+
                                 <a href="{{ route('user.logout') }}" class="list-group-item list-group-item-action border-color">
                                     <div class="row">
                                         <div class="col-auto">
